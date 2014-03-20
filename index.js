@@ -1,4 +1,5 @@
 var mongourl = "mongodb://localhost:27017/mongoexample";
+var mongourl = "mongodb://public:password@ds029338.mongolab.com:29338/mongodbtest";
 
 var express = require("express");
 var app = express();
