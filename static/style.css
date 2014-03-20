@@ -1,0 +1,40 @@
+html {
+	font-family: helvetica;
+}
+
+main {
+	max-width:600px;
+	margin:3em auto;
+	border:1px solid black;
+	border-radius: 10px;
+	padding:10px;
+}
+
+input, textarea {
+	width:100%;
+	border-radius: 5px;
+	padding:5px;
+	box-sizing: border-box;
+}
+
+form, .notes {
+	padding:10px;
+	box-shadow:0px 1px 2px 1px rgba(0,0,0,0.5);
+}
+
+.notes {
+	margin-bottom: 10px;
+	padding: 5px 0;
+}
+
+.note {
+	box-shadow:0px 1px 1px 1px rgba(0,0,0,0.2);
+	padding:5px;
+	margin:5px;
+}
+
+h2 {
+	margin:0.5em;
+	font-size:14px;
+	font-weight: 400;
+}

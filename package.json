@@ -1,0 +1,11 @@
+{
+  "name": "MongoDB",
+  "version": "0.0.0",
+  "description": "A demo to accompany a presentation on MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "RangerMauve",
+  "license": "MIT"
+}

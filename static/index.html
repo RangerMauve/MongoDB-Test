@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>MongoDB Example App</title>
+	<link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+	<main>
+		<section class="notes">
+			<article class="note" rv-id="note._id" rv-each-note="notes">
+				<h3 class="title">{note.title}
+					<button rv-data-id="note._id" rv-on-click="removePost">Remove</button>
+				</h3>
+				<div class="details">{note.details}</div>
+				<ul class="subnotes">
+					<li class="subnote" rv-each-subnote="note.subnotes">{subnote}</li>
+				</ul>
+			</article>
+		</section>
+		<form class="makenote" rv-on-submit="addNote">
+			<input placeholder="Title" rv-value="currentNote.title">
+			<textarea placeholder="Details" rv-value="currentNote.details"></textarea>
+			<fieldset>
+				<legend>
+					Subnotes
+					<button rv-on-click="addSubnote">Add</button>
+				</legend>
+				<section rv-each-subnote="currentNote.subnotes">
+					<input rv-value="subnote.value">
+				</section>
+			</fieldset>
+			<input type="submit" value="Add">
+		</form>
+	</main>
+	<script src="/rivets.min.js"></script>
+	<script src="/watch.min.js"></script>
+	<script src="/superagent.js"></script>
+	<script src="/scripts.js"></script>
+</body>
+
+</html>
